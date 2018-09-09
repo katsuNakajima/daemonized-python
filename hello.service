@@ -1,0 +1,10 @@
+[Unit]
+Description = hello daemon
+
+[Service]
+ExecStart = /opt/hellopyd.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
